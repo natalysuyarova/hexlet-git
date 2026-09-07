@@ -7,7 +7,9 @@ authors = [
     { name = "NatS", email = "nsuyarova@mail.ru" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pandas>=3.0.5",
+]
 
 [project.scripts]
 hexlet-hello-world = "hexlet_hello_world:main"
