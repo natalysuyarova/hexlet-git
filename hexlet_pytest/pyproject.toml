@@ -1,0 +1,28 @@
+[project]
+name = "hexlet-pytest"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "NatS", email = "nsuyarova@mail.ru" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+hexlet-pytest = "hexlet_pytest:main"
+
+[build-system]
+#requires = ["uv_build>=0.12.10,<0.13.0"]
+#build-backend = "uv_build"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["hexlet_pytest"]
